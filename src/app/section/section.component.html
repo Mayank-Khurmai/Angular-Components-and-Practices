@@ -1,4 +1,10 @@
 <div id="section-main-div" class="border p-4">
     {{ sum }}
     <button (click)="check_alert()">Add the Numbers</button>
+
+
+    <br>
+    <br>
+
+    <div *ngIf="sum == 1">Content to render when condition is true.</div>
 </div>
