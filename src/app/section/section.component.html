@@ -6,5 +6,10 @@
     <br>
     <br>
 
-    <div *ngIf="sum == 1">Content to render when condition is true.</div>
+    <div *ngIf="sum == 1; else wap">Content to render when condition is true.</div>
+
+    <ng-template #wap>
+        Content is False
+    </ng-template>
+
 </div>
