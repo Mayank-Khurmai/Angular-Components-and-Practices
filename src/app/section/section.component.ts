@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class SectionComponent implements OnInit {
  
   public sum: number = 1;
+  public show_hide: string = "Show Password";
+  public psswdtype:string = "password";
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,5 +20,17 @@ export class SectionComponent implements OnInit {
   {
     this.sum = 45;
   }
+  showhide(){
+    if(this.show_hide == "Show Password"){
+      this.show_hide = "Hide Password";
+      this.psswdtype = "text";
+    }
+    else{
+      this.show_hide = "Show Password";
+      this.psswdtype = "password";
+    }
+    
+  }
+
 
 }
